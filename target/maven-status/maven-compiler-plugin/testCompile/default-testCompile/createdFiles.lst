@@ -1,4 +1,5 @@
 com\example\FelineTest.class
-com\example\LionHasManeParametarizedTest.class
 com\example\CatTest.class
+com\example\FelineGetKittensParametizedTest.class
 com\example\LionTest.class
+com\example\LionParametirizedTest.class
