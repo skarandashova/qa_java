@@ -21,6 +21,7 @@ public class CatTest {
     @Mock
     Predator predator;
 
+    Cat cat = new Cat(feline);
 
     @Test
     public void catGetFoodReturnsAnimalBirdsFishTest() throws Exception {
@@ -32,7 +33,6 @@ public class CatTest {
 
     @Test
     public void catGetSoundReturnsMeowTest() {
-        Cat cat = new Cat(feline);
         assertEquals("Мяу", cat.getSound());
     }
 }
