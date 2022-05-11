@@ -6,7 +6,7 @@ public class Cat {
 
     Predator predator;
 
-    public Cat(Feline feline) {
+    public Cat(Predator feline) {
         this.predator = feline;
     }
 
@@ -17,5 +17,4 @@ public class Cat {
     public List<String> getFood() throws Exception {
         return predator.eatMeat();
     }
-
 }
