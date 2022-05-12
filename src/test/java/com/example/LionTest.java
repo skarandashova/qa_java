@@ -59,16 +59,16 @@ public class LionTest {
     @Test
     public void lionMaleDoesHaveManeReturnsBooleanHasManeTest() throws Exception {
         Lion lion = new Lion("Самец", feline);
-        boolean lionMaleHasManeExpected = feline.equals("Самец");
-        boolean lionMaleHasManeActual = lion.equals("Самец");
+        boolean lionMaleHasManeExpected = true;
+        boolean lionMaleHasManeActual = lion.doesHaveMane();
         Assert.assertEquals(lionMaleHasManeExpected, lionMaleHasManeActual);
     }
 
     @Test
     public void lionFemaleDoesHaveManeReturnsBooleanHasManeTest() throws Exception {
         Lion lion = new Lion("Самка", feline);
-        boolean lionFemaleHasManeExpected = feline.equals("Самка");
-        boolean lionFemaleHasManeActual = lion.equals("Самка");
+        boolean lionFemaleHasManeExpected = false;
+        boolean lionFemaleHasManeActual = lion.doesHaveMane();
         Assert.assertEquals(lionFemaleHasManeExpected, lionFemaleHasManeActual);
     }
 }
